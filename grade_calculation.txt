@@ -1,0 +1,62 @@
+# Read five subjects marks and 
+# check whether subject marks is above 40 or not 
+# if below 40 display that you are fail in that subject
+# if not calculate the average and print the grade.......
+
+print("-----Enter marks of five subjects-----")
+mat = (int(input("maths marks:")))
+sci = (int(input("sci marks:")))
+soc = (int(input("soc marks:")))
+eng = (int(input("eng marks:")))
+hin = (int(input("hin marks:")))
+
+# if the sub marks are grater the 40
+
+if mat <= 40:
+    print("you failed in mat subj due to", mat, "maks")
+if sci <= 40:
+    print("You failed in sci subj due to", sci, "marks")
+if soc <= 40:
+    print("you failed in soc subj due to", soc, "marks")
+if eng <= 40:
+    print("you failed in eng subj due to", eng, "marks")
+if hin <= 40:
+    print("you failed in hin subj due to", hin, "marks")
+
+# for printing the average of the five subjects marks
+
+avg = int((mat+sci+soc+eng+hin)/5)
+if avg <= 100 and (mat <= 40, sci <= 40, soc <= 40, eng <= 40, hin <= 40):
+    if avg > 40:
+        if avg >= 90:
+            print("A+ grade with:", avg, "%")
+        elif avg >= 80:
+            print("A grade with:", avg, "%")
+        elif avg >= 70:
+            print("B+ grade with:", avg, "%")
+        elif avg >= 60:
+            print("B grade with:", avg, "%")
+        elif avg >= 50:
+            print("C grade with:", avg, "%")
+        elif avg > 40:
+            print("D grade with:", avg, "%")
+else:
+    print("Enter valid marks")
+
+
+
+
+
+# Sample output:::
+
+C:\Users\Dell\PycharmProjects\pythonProject1\venv\Scripts\python.exe C:/Users/Dell/PycharmProjects/pythonProject1/tuetion.py
+-----Enter marks of five subjects-----
+maths marks:90
+sci marks:90
+soc marks:90
+eng marks:90
+hin marks:90
+A+ grade with: 90 %
+
+Process finished with exit code 0
+
